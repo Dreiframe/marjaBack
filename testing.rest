@@ -1,0 +1,31 @@
+### Get all
+GET http://localhost:3001/api/spots
+
+### Get one known
+GET http://localhost:3001/api/spots/1
+
+### Get one missing
+GET http://localhost:3001/api/spots/999
+
+### Delte one
+DELETE  http://localhost:3001/api/spots/1
+
+### Delte one missing
+DELETE  http://localhost:3001/api/spots/1
+
+### Post new spot
+POST http://localhost:3001/api/spots
+content-type: application/json
+
+{
+    "spottedSpecies":"silokki",
+    "location":"{x:666, y:69}",
+    "whoSpotted":"user420",
+    "speciesAvailability": "medium"
+}
+
+### Post missing content
+POST http://localhost:3001/api/spots
+content-type: application/json
+
+{}
